@@ -1,0 +1,100 @@
+﻿---
+layout: no-sidebar
+title: What's Growing - Lowes' Landscaping
+---
+<!-- Banner -->
+	<div id="banner">
+  
+		<h2>What's Growing</h2>
+		<span class="byline">Here is the byline for the what's growing page.
+		</span>
+	</div>			
+	
+<!-- Main -->				
+	<div id="roots" class="wrapper style2">
+
+		<article id="main" class="container special">
+			<ul>
+  				{% for post in site.posts %}
+    					<li>
+     				 		<a href="{{ post.url }}">{{ post.title }}</a>
+      						{{ post.excerpt }}
+   				 	</li>
+  				{% endfor %}
+			</ul>
+		</article>
+
+	</div>
+	
+<!--
+	<div id="roots" class="wrapper style1">
+
+		<article id="main" class="container special">
+			<!-- <img class="image featured" src="images/cuba.jpg" alt="Work done in Cuba Missouri" /> -->
+			<header>
+				<h2>Our Core Values</h2>
+				<span class="byline">
+					Mission - To enhance the beauty and value of every client’s property while exceeding their expectations every step of the way.
+				</span>
+			</header>
+			<p>
+				<strong>Teamwork</strong> - Inspiring one another to achieve our company vision by demonstrating dedication, initiative and direction while maintaining a positive attitude toward our customers and one another. We will demonstrate a productive work environment through respect, appreciation and open communication.
+			</p>
+			<p>
+				<strong>Quality</strong> – Committing to the highest standards of excellence in all phases of our company by always using quality materials, demonstrating professionalism, providing the best service and continually looking for ways to improve, all while focusing on safety. 
+			</p>
+			<p>
+				<strong>Client Relationships</strong> – Maintaining open and active relationships with our clients to provide the best service while always seeking to establish new relationships to grow our company.
+			</p>
+			<p>
+				<strong>Profitability</strong> – Efficiently using labor and materials to support a profitable and productive company. Profitability promotes job creation, stability and company growth while providing employees the opportunity to provide for their families. Profitability also allows us to give back to the community we serve.
+			</p>
+		</article>
+
+	</div>
+-->
+<!--
+
+	<div class="wrapper style1">
+		
+		<section id="features" class="container special">
+			<header>
+				<h2 id="testimonials">Testimonials</h2>
+				<span class="byline">Hear from some of our clients.</span>
+			</header>
+			<div class="row">
+				<article class="4u special">
+					<a href="http://mdomaradzki.deviantart.com/art/Bueller-VII-351975126" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+					<header>
+						<h3><a href="#">Gravida aliquam penatibus</a></h3>
+					</header>
+					<p>
+						Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
+						porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
+					</p>
+				</article>
+				<article class="4u special">
+					<a href="http://mdomaradzki.deviantart.com/art/Home-Bound-Train-II-338912191" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+					<header>
+						<h3><a href="#">Sed quis rhoncus placerat</a></h3>
+					</header>
+					<p>
+						Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
+						porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
+					</p>
+				</article>
+				<article class="4u special">
+					<a href="http://mdomaradzki.deviantart.com/art/Up-is-Down-325005102" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+					<header>
+						<h3><a href="#">Magna laoreet et aliquam</a></h3>
+					</header>
+					<p>
+						Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
+						porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
+					</p>
+				</article>
+			</div>
+		</section>
+
+	</div>
+	-->
