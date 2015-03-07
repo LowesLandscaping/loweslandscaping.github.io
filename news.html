@@ -6,7 +6,8 @@ title: What's Growing - Lowes' Landscaping
 	<div id="banner">
   
 		<h2>What's Growing</h2>
-		<span class="byline">Here is the byline for the what's growing page.
+		<span class="byline">We are professional team of lawn and landscape experts building creative and sustainable outdoor living spaces.<br>
+		Our services include landscaping, retaining walls, patios, water features, lawn maintenance and snow removal.
 		</span>
 	</div>			
 	
@@ -14,36 +15,23 @@ title: What's Growing - Lowes' Landscaping
 	<div id="roots" class="wrapper style2">
 
 		<article id="main" class="container special">
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
-  <div class="content">
-    {{ post.content }}
-  </div>
-{% endfor %}
-
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
-</div>
+			<img class="image featured" src="images/lowesStone.jpg" alt="Lowes' Landscaping Paver Stone" />
+			<header>
+				<h2>Our Roots</h2>
+				<span class="byline">
+					Lowes' Landscaping - A growing investment since 1985
+				</span>
+			</header>
+			<p>
+				Michael G. Lowes started Lowes’ Landscaping in 1985 as a small close customer based company. Erik Lowes, Michael’s son, took over and expanded the business in 2008 to serve residential, commercial, and municipal customers. In 2013, Erik opened Planted in Stone, the retail division of the company. Lowes Landscaping purchased Clean Cut Lawn Service and expanded its services in Fall of 2013.  The company is certified with National Concrete Masonry Association and International Concrete Paver Association
+			</p>
+			<p>
+				Our mission is to enhance the  beauty and value of every client&rsquo;s property while exceeding their expectation  every step of the way. We commit to the highest standards of excellence in all  phases of our company by always using quality materials, demonstrating professionalism,  providing the best service and continually looking for ways to improve, all  while focusing on safety. We strive to maintain open and active relationships  with our clients to provide the best service while always seeking to establish  new relationships. Our profitability also allows us to give back to the  community we serve. We continue to base our company upon value and professionalism with an emphasis on unique hardscape design.
+			</p>
 		</article>
 
 	</div>
 	
-
 	<div id="roots" class="wrapper style1">
 
 		<article id="main" class="container special">
@@ -69,7 +57,6 @@ title: What's Growing - Lowes' Landscaping
 		</article>
 
 	</div>
-
 
 <!--
 
