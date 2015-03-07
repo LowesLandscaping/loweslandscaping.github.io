@@ -1,3 +1,4 @@
 name: Lowes Landscaping - Cuba Missouri
 markdown: redcarpet
 pygments: true
+paginate: 5
