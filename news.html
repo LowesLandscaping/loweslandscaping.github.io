@@ -1,26 +1,37 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1343.16">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    p.p4 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">--- layout: no-sidebar title: Planted In Stone - Lawn and Landscape Supplies Retail Store - Lowes' Landscaping, Serving Cuba, Bourbon, Eureka, Fort Leonard Wood, Pacific, Rolla, St. James, St. Robert, Steelville, Sullivan, Union, Washington, and Waynesville, Missouri ---</span></p>
-<p class="p2"><span class="s1"><b>Planted in Stone</b></span></p>
-<p class="p1"><span class="s1">Our Lawn and Landscape Supplies Storefront<span class="Apple-converted-space"> </span></span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1">Planted in Stone carries all your landscape supplies for the do-it yourselfer. We have what you need to start your project. We carry bulk items from mulches, topsoil, garden soil, compost, and decorative gravels, to natural stone and boulders. We carry a full line of plant material from annuals and perennials, vegetable plants and hanging baskets, to trees and shrubs. Inside the store, you will find all the supplies you need from fertilizers and chemicals, seed, garden tools, pots, statuary, bird seed, and soil amendments.<span class="Apple-converted-space"> </span></span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space"> </span></span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space"> </span></span></p>
-</body>
-</html>
+---
+layout: no-sidebar
+title: What's new - Lawn and Landscape Supplies Retail Store - Lowes' Landscaping, Serving Cuba, Bourbon, Eureka, Fort Leonard Wood, Pacific, Rolla, St. James, St. Robert, Steelville, Sullivan, Union, Washington, and Waynesville, Missouri
+---
+		<!-- Banner -->
+			<div id="banner">
+          
+				<h2>What's New</h2>
+				<span class="byline">The Blog of Lowes Landscaping
+				</span>
+			</div>			
+		<!-- Main -->				
+			<div class="wrapper style2">
+
+				<article id="main" class="container special">
+					<img class="image featured" src="images/plantedinstone.jpg" alt="Planted in Stone Storefront" />
+
+					<ul>
+					  {% for post in site.posts %}
+						<li>
+						  <a href="{{ post.url }}">{{ post.title }}</a>
+						</li>
+					  {% endfor %}
+					</ul>
+					
+				</article>
+				<section class="container special">
+				<div class="row">
+					<article class="6u special">
+						<img src="images/retail-mulch.JPG" alt="Mulch" />
+					</article>
+					<article class="6u special">
+						<img src="images/retail-erik.JPG" alt="Erik Lowes with flowers" />
+					</article>
+				</div>
+				</section>
+			</div>
