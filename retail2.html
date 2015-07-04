@@ -42,13 +42,62 @@ title: Planted In Stone - Lawn and Landscape Supplies Retail Store - Lowes' Land
 			</section>
 			<article id="main" class="container special">
 <!-- 					<img class="image featured" src="images/plantedinstone.jpg" alt="Planted in Stone Storefront" /> -->
-
+				<form id="cubic_yard_calculator" method="post">
 					<p>
-						Calculate your mulch and/or gravel needs: {    } {in,ft} Width  {     } {in,ft} Height  {    } {in,ft} Depth <br />
-													You need {     }  cubic yards.
+						Calculate your mulch and/or gravel needs:
+						<h5>Width</h5>
+						<input type="text" value="" name="width-ft" /><span class="calculator-note">ft</span>
+						<input type="text" value="" name="width-in" /><span class="calculator-note">in</span>
+						<h5>Length</h5>
+						<input type="text" value="" name="length-ft" /><span class="calculator-note">ft</span>
+						<input type="text" value="" name="length-in" /><span class="calculator-note">in</span>
+						<h5>Depth</h5>
+						<input type="text" value="" name="depth-ft" /><span class="calculator-note">ft</span>
+						<input type="text" value="" name="depth-in" /><span class="calculator-note">in</span>
+						<input type="submit" id="calculator_submit"/>
+						<div id="calculator_result_container">
+							<p><span id="calculator_result"></span></p>
+						</div>						
 					</p>
-					
-				</article>
+				</form>
+				<script type='text/javascript'>
+					document.getElementById("cubic_yard_calculator").addEventListener("submit", function(event){
+						var totalWidth = 0;
+						var totalLength = 0;
+						var totalDepth = 0;
+						var cubicYards = 0;
+						var result = "There was a problem. Please check that there is at least one value entered for Width, Length and Depth.";
+						var widthFeet = document.getElementsByName('width-ft')[0].value;
+						var widthInches = document.getElementsByName('width-in')[0].value;
+						var lengthFeet = document.getElementsByName('length-ft')[0].value;
+						var lengthInches = document.getElementsByName('length-in')[0].value;
+						var depthFeet = document.getElementsByName('depth-ft')[0].value;
+						var depthInches = document.getElementsByName('depth-in')[0].value;
+						
+						totalWidth = (widthFeet <= 0) ? 0 : widthFeet;
+						widthInches = (widthInches <= 0) ? 0 : (widthInches / 12);
+						totalWidth = parseFloat(totalWidth) + parseFloat(widthInches);
+						
+						totalLength = (lengthFeet <= 0) ? 0 : lengthFeet;
+						lengthInches = (lengthInches <= 0) ? 0 : (lengthInches / 12);
+						totalLength = parseFloat(totalLength) + parseFloat(lengthInches);
+						
+						totalDepth = (depthFeet <= 0) ? 0 : depthFeet;
+						depthInches = (depthInches <= 0) ? 0 : (depthInches / 12);
+						totalDepth = parseFloat(totalDepth) + parseFloat(depthInches);
+						
+						cubicYards = (totalWidth * totalLength * totalDepth) / 27;
+						//Round cubic yards
+						cubicYards = Math.round(cubicYards * 100) / 100;
+
+						if (cubicYards > 0){
+							result = "You need " + cubicYards + " cubic yards.";
+						}
+						document.getElementById('calculator_result').innerHTML = result;
+						event.preventDefault();
+					});
+				</script>
+			</article>
 			<div class="carousel">
 	<div class="reel">
 
