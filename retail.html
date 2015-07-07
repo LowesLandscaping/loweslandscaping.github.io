@@ -1,0 +1,249 @@
+---
+layout: no-sidebar
+title: Planted In Stone - Lawn and Landscape Supplies Retail Store - Lowes' Landscaping, Serving Cuba, Rolla, St. James, and Sullivan Missouri
+---
+		<!-- Banner -->
+			<div id="banner">
+          
+				<h2>Planted in Stone</h2>
+				<span class="byline">Our Lawn and Landscape Supplies Storefront
+				</span>
+			</div>			
+		<!-- Main -->				
+			<div class="wrapper style2">
+
+				<article id="main" class="container special">
+					<img class="image featured" src="images/plantedinstone.jpg" alt="Planted in Stone Storefront" />
+
+					<p>
+						Planted in Stone carries all your landscape supplies for the do-it yourselfer. We have what you need to start your project. We carry bulk items from mulches, topsoil, garden soil, compost, and decorative gravels, to natural stone and boulders. We carry a full line of plant material from annuals and perennials, vegetable plants and hanging baskets, to trees and shrubs. Inside the store, you will find all the supplies you need from fertilizers and chemicals, seed, garden tools, pots, statuary, bird seed, and soil amendments. 
+					</p>
+					
+				</article>
+<!-- 
+				<section class="container special">
+				<div class="row">
+					<article class="6u special">
+						<img src="images/retail-mulch.JPG" alt="Mulch" />
+					</article>
+					<article class="6u special">
+						<img src="images/retail-erik.JPG" alt="Erik Lowes with flowers" />
+					</article>
+				</div>
+				</section>
+ -->
+			</div>
+			
+			<div class="wrapper style1">
+			<section id="features" class="container special">
+			<header>
+				<h2 id="portfolio">Buy Mulch and Gravel</h2>
+			</header>
+			</section>
+			<article id="main" class="container special">
+<!-- 					<img class="image featured" src="images/plantedinstone.jpg" alt="Planted in Stone Storefront" /> -->
+				<form id="cubic_yard_calculator" method="post">
+					<p>
+						Calculate your mulch and/or gravel needs: <span style="font-weight: bold;" id="calculator_result"></span>
+						<h5>Width</h5>
+						<input type="text" value="" name="width-ft" /><span class="calculator-note">ft</span>
+						<input type="text" value="" name="width-in" /><span class="calculator-note">in</span>
+						<h5>Length</h5>
+						<input type="text" value="" name="length-ft" /><span class="calculator-note">ft</span>
+						<input type="text" value="" name="length-in" /><span class="calculator-note">in</span>
+						<h5>Depth</h5>
+						<input type="text" value="" name="depth-ft" /><span class="calculator-note">ft</span>
+						<input type="text" value="" name="depth-in" /><span class="calculator-note">in</span>
+						<input type="submit" id="calculator_submit"/>
+<!-- 
+						<div id="calculator_result_container">
+							<p><span id="calculator_result"></span></p>
+						</div>	
+ -->					
+					</p>
+				</form>
+				<script type='text/javascript'>
+					document.getElementById("cubic_yard_calculator").addEventListener("submit", function(event){
+						var totalWidth = 0;
+						var totalLength = 0;
+						var totalDepth = 0;
+						var cubicYards = 0;
+						var result = "There was a problem. Please check that there is at least one value entered for Width, Length and Depth.";
+						var widthFeet = document.getElementsByName('width-ft')[0].value;
+						var widthInches = document.getElementsByName('width-in')[0].value;
+						var lengthFeet = document.getElementsByName('length-ft')[0].value;
+						var lengthInches = document.getElementsByName('length-in')[0].value;
+						var depthFeet = document.getElementsByName('depth-ft')[0].value;
+						var depthInches = document.getElementsByName('depth-in')[0].value;
+						
+						totalWidth = (widthFeet <= 0) ? 0 : widthFeet;
+						widthInches = (widthInches <= 0) ? 0 : (widthInches / 12);
+						totalWidth = parseFloat(totalWidth) + parseFloat(widthInches);
+						
+						totalLength = (lengthFeet <= 0) ? 0 : lengthFeet;
+						lengthInches = (lengthInches <= 0) ? 0 : (lengthInches / 12);
+						totalLength = parseFloat(totalLength) + parseFloat(lengthInches);
+						
+						totalDepth = (depthFeet <= 0) ? 0 : depthFeet;
+						depthInches = (depthInches <= 0) ? 0 : (depthInches / 12);
+						totalDepth = parseFloat(totalDepth) + parseFloat(depthInches);
+						
+						cubicYards = (totalWidth * totalLength * totalDepth) / 27;
+						//Round cubic yards
+						cubicYards = Math.round(cubicYards * 100) / 100;
+
+						if (cubicYards > 0){
+							result = "You need " + cubicYards + " cubic yards.";
+						}
+						document.getElementById('calculator_result').innerHTML = result;
+						event.preventDefault();
+					});
+				</script>
+			</article>
+			<div class="carousel">
+	<div class="reel">
+		
+		<article>
+			<img id="Red_Mulch" class="image featured" src="images/mulch/Red_Mulch.jpg" alt="Red Mulch" />
+			<header>
+				<h3>Red Mulch</h3>
+			</header>
+<!-- 			<p>Hiring a landscaper means making an ongoing investment in your property</p>						 -->
+		</article>
+		
+		<article>
+			<img id="Black_Mulch" class="image featured" src="images/mulch/Black_Mulch.jpg" alt="Black Mulch" />
+			<header>
+				<h3>Black Mulch</h3>
+			</header>
+<!-- 			<p>Creative ideas and practical solutions for outdoor living  </p>					 -->
+		</article> 
+		
+		<article>
+			<img id="Brown_Mulch" class="image featured" src="images/mulch/Brown_Mulch.jpg" alt="Brown Mulch" />
+			<header>
+				<h3>Brown Mulch</h3>
+			</header>
+<!-- 			<p>Creative ideas and practical solutions for outdoor living  </p>				 -->
+		</article> 
+	
+		<article>
+			<img id="Compost" class="image featured" src="images/mulch/Compost.jpg" alt="Compost" />
+			<header>
+				<h3>Compost</h3>
+			</header>
+<!-- 			<p>Visit Planted In Stone for bedding plants, mulch, soil and other stuff.</p>				 -->
+		</article>
+	
+		<article>
+			<img id="Double_Ground_Mulch" class="image featured" src="images/mulch/Double_Ground_Mulch.jpg" alt="Double Ground Mulch" />
+			<header>
+				<h3>Double Ground Mulch</h3>
+			</header>
+<!-- 			<p>What shall we say about snow and ice removal - in two lines</p>					 -->
+		</article>
+	
+		<article>
+			<img id="Alabama_Sunset" class="image featured" src="images/mulch/Alabama_Sunset.jpg" alt="Alabama Sunset" />
+			<header>
+				<h3>Alabama Sunset</h3>
+			</header>					
+		</article> 
+		
+		<article>
+			<img id="Meramec1" class="image featured" src="images/mulch/Meramec1.jpg" alt="Maramec1" />
+			<header>
+				<h3>Meramec 1</h3>
+			</header>
+<!-- 			<p>Hiring a landscaper means making an ongoing investment in your property</p>			 -->
+		</article>
+		
+		<article>
+			<img id="Meramec2" class="image featured" src="images/mulch/Meramec2.jpg" alt="Meramec2" />
+			<header>
+				<h3>Meramec 2</h3>
+			</header>
+<!-- 			<p>Hiring a landscaper means making an ongoing investment in your property</p>					 -->
+		</article>
+		
+		<article>
+			<img id="missouri_rainbow" class="image featured" src="images/mulch/missouri_rainbow.jpg" alt="Missouri Rainbow" />
+			<header>
+				<h3>Missouri Rainbow</h3>
+			</header>
+<!-- 			<p>Hiring a landscaper means making an ongoing investment in your property</p>				 -->
+		</article>
+		
+		<article>
+			<img id="Pea_Gravel" class="image featured" src="images/mulch/Pea_Gravel.jpg" alt="Pea Gravel" />
+			<header>
+				<h3>Pea Gravel</h3>
+			</header>
+<!-- 			<p>Hiring a landscaper means making an ongoing investment in your property</p>					 -->
+		</article>
+		
+		
+		<article>
+			<img id="Trap" class="image featured" src="images/mulch/Trap.jpg" alt="Trap" />
+			<header>
+				<h3>Trap</h3>
+			</header>
+<!-- 			<p>Hiring a landscaper means making an ongoing investment in your property</p>					 -->
+		</article>
+
+
+		
+
+  </div>
+</div>
+			
+
+	</div>
+
+
+
+		<!-- Features -->
+		<!--
+			<div class="wrapper style1">
+				
+				<section id="features" class="container special">
+					<header>
+						<h2 id="testimonials">Testimonials</h2>
+						<span class="byline">Hear from some of our clients.</span>
+					</header>
+					<div class="row">
+						<article class="4u special">
+							<a href="http://mdomaradzki.deviantart.com/art/Bueller-VII-351975126" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Gravida aliquam penatibus</a></h3>
+							</header>
+							<p>
+								Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
+								porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
+							</p>
+						</article>
+						<article class="4u special">
+							<a href="http://mdomaradzki.deviantart.com/art/Home-Bound-Train-II-338912191" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Sed quis rhoncus placerat</a></h3>
+							</header>
+							<p>
+								Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
+								porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
+							</p>
+						</article>
+						<article class="4u special">
+							<a href="http://mdomaradzki.deviantart.com/art/Up-is-Down-325005102" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+							<header>
+								<h3><a href="#">Magna laoreet et aliquam</a></h3>
+							</header>
+							<p>
+								Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam
+								porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.
+							</p>
+						</article>
+					</div>
+				</section>
+
+			</div>
+			-->
